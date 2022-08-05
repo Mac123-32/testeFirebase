@@ -19,3 +19,4 @@ const keyRandom = () => {
 const db = admin.firestore();
 
 module.exports = { db, keyRandom, ffunctions };
+/** */
