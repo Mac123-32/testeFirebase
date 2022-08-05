@@ -2,7 +2,7 @@ const admin = require("firebase-admin");
 const ffunctions = require("firebase-functions")
 const uuid = require("uuid");
 
-var serviceAccount = require("../permission/serviceAccountKey.json");
+var serviceAccount = require("../../permissions/apiFirebase.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -19,4 +19,3 @@ const keyRandom = () => {
 const db = admin.firestore();
 
 module.exports = { db, keyRandom, ffunctions };
-/** */
